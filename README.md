@@ -18,3 +18,41 @@ allprojects {
 		}
 	}
 ```
+Step 2. Add the dependency
+```
+dependencies {
+	        implementation 'com.github.harunkor:AndroidGifViewPlayerKotlin:1.0.0'
+	}
+```
+
+Code : 
+
+
+
+
+
+# Manifest 
+Permission : (dependent on use)
+```
+  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"></uses-permission>
+  <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+  
+  
+  
+  
+```
+Necessary :
+
+```
+  <application
+        android:hardwareAccelerated="false"
+	.....
+	....
+	........
+	...
+    </application>
+```
+
+# WARNING! : compile sdk version should be 28.
+
+
