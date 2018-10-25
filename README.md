@@ -27,10 +27,31 @@ dependencies {
 
 Code : 
 
-
-
-
-
+```
+      	//gif player layout variable.
+           	var gifViewPlayer: GifMovieView?  = findViewById(R.id.gifViewPlayer) as GifMovieView 
+	//gif animation file set  in drawable folder. 
+              	gifViewPlayer!!.setMovieResource(R.drawable.carkifelek)
+	//gif animation Movie callback and set 
+            	gifViewPlayer?.setMovie(gifViewPlayer?.getMovie()!!);
+	// gif animation hide. 
+            	gifViewPlayer?.setVisibility(View.INVISIBLE);    
+      	// gif animation  visible  
+            	gifViewPlayer?.setVisibility(View.VISIBLE);
+	// gif animation file set  in assets folder. 
+            	gifViewPlayer?.setMovieAssets("eat.gif");
+       		var path:String = Environment.getExternalStorageDirectory().toString() + "/Download/danc.gif";   
+ 	// gif animation file set in Android device. 
+            	gifViewPlayer?.setMovieFile(path);
+	// gif animation (URL stream) show link.  
+              	gifViewPlayer?.setMovieUrl("https://scdn.androidcommunity.com/wp-content/uploads/2014/10/androidify2.gif");
+   	// gif animation pause
+     	    	gifViewPlayer?.setPaused(true);  
+     	// gif animation play 
+            	gifViewPlayer?.setPaused(false);
+	          
+```
+ 
 # Manifest 
 Permission : (dependent on use)
 ```
