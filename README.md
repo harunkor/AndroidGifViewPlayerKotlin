@@ -25,6 +25,15 @@ dependencies {
 	}
 ```
 
+Layout : 
+
+```
+ <tr.com.harunkor.gifviewplayer.GifMovieView
+        android:id="@+id/gifViewPlayer"
+        android:layout_width="400dp"
+        android:layout_height="400dp"/>
+```
+
 Code : 
 
 ```
